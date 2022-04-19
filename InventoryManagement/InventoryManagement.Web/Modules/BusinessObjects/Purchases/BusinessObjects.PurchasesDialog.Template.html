@@ -1,0 +1,99 @@
+﻿
+    <!--<script type="text/javascript">
+        jQuery(function () {
+            new InventoryManagement.BasicSamples.CustomLinksInGrid($('#GridDiv'), {}).init();
+            Q.initFullHeightGridPage($('#GridDiv'));
+        });
+    </script>-->
+    <div id="~_Toolbar" class="s-DialogToolbar"></div>
+
+<div class="col-md-12">
+<div class="row" >
+    <div class="col-md-6">
+        <div class="s-Form" style="border:0px solid green;">
+            <form id="~_Form" action="" >
+                <div class="fieldset ui-widget ui-widget-content ui-corner-all" style="padding-left:0 !important;margin-left:0 !important">
+                    <div id="~_PropertyGrid"></div>
+                    <div class="clear"></div>
+                </div>
+            </form> 
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div style="height:235px">
+            
+            <div class="s-Form">
+                <form id="~_PurchasesForm" action="">
+                    <div class="fieldset">
+                        <div id="~_PurchasesPropertyGrid"></div>
+                        <div class="clear"></div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="~_PurchasesToolbar" class="s-DialogToolbar" style="float:right;margin-right:16px">
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--<div id="~_Tabs" class="s-DialogContent">
+        <ul>
+            <li><a href="#~_TabSalesOrders0"><span>Sales orders 1</span></a></li>
+        </ul>
+        <div id="~_TabSalesOrders0" class="tab-pane s-TabNotes">
+            <div id="~_Div2">
+
+                    </div>
+        </div>
+    </div>-->
+    <div id="~_Tabs" class="s-DialogContent" style="overflow:auto;height:550px;">
+        <ul>
+            <li><a href="#~_TabPurchaseOrders"><span>Purchase orders</span></a></li>
+            <li><a href="#~_TabPayment"><span>Payment</span></a></li>
+            <li><a href="#~_TabReceive"><span>Receive</span></a></li>
+            <li><a href="#~_TabReturn"><span>Return and Refund</span></a></li>
+            <li><a href="#~_TabUnstock"><span>Unstock</span></a></li>
+            <li><a href="#~_TabNotes"><span>Notes</span></a></li>
+            <li><a href="#~_TabPurchaseTrails"><span>Purchase Trails</span></a></li>
+        </ul>
+
+        <div id="~_TabPurchaseOrders" class="tab-pane s-TabOrders">
+            <div id="~_PurchaseOrdersGrid">
+            </div>
+        </div>
+
+        <div id="~_TabPayment" class="tab-pane">
+   
+
+            <div id="~_PaymentGrid">
+            </div>
+        </div>
+
+        <div id="~_TabReceive" class="tab-pane s-TabOrders">
+            <div id="~_ReceiveGrid">
+            </div>
+        </div>
+
+
+        <div id="~_TabReturn" class="tab-pane s-TabOrders">
+            <div id="~_ReturnGrid">
+            </div>
+            <div id="~_ReturnOutwardsPaymentGrid" style="margin-top:8px">
+            </div>
+        </div>
+        <div id="~_TabUnstock" class="tab-pane s-TabOrders">
+            <div id="~_UnstockGrid">
+            </div>
+        </div>
+        <div id="~_TabNotes" class="tab-pane s-TabNotes">
+            <div id="~_Notes">
+            </div>
+        </div>
+        <div id="~_TabPurchaseTrails" class="tab-pane s-TabNotes">
+            <div id="~_PurchaseTrails">
+            </div>
+        </div>
+    </div>
+
+

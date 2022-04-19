@@ -1,0 +1,9 @@
+{
+  "Navigation.Dashboard": "Dashboard",
+  "Permission.Administration:": "Administrationa",
+  "Permission.Administration:Security": "User, Role Management and Permissions",
+  "Permission.Administration:Translation": "Languages and Translations",
+  "Permission.InventoryManagement:": "Inventory Node",
+  "Permission.InventoryManagement:Bank:": "Please Bank",
+  "Permission.InventoryManagement:Bank:Read": "Please Read Bank Statement"
+}

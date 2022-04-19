@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Adjust stock";
+}
+
+<div id="GridDiv"></div>
+
+<script type="text/javascript">
+    jQuery(function () {
+        new InventoryManagement.BusinessObjects.AdjustStockGrid($('#GridDiv'), {}).init();
+
+        Q.initFullHeightGridPage($('#GridDiv'));
+    });
+</script>

@@ -1,0 +1,79 @@
+﻿<div id="~_GridDiv" style="padding: 6px"></div>
+
+<!--<script type="text/javascript">
+    jQuery(function () {
+        new InventoryManagement.BasicSamples.CustomLinksInGrid($('#GridDiv'), {}).init();
+        Q.initFullHeightGridPage($('#GridDiv'));
+    });
+</script>-->
+<div id="~_Toolbar" class="s-DialogToolbar"></div>
+
+<div class="s-Form" style="height: 155px">
+    <form id="~_Form" action="">
+        <div class="fieldset ui-widget ui-widget-content ui-corner-all">
+            <div id="~_PropertyGrid"></div>
+            <div class="clear"></div>
+        </div>
+    </form>
+</div>
+
+<!--<div id="~_Tabs" class="s-DialogContent">
+    <ul>
+        <li><a href="#~_TabSalesOrders0"><span>Sales orders 1</span></a></li>
+    </ul>
+    <div id="~_TabSalesOrders0" class="tab-pane s-TabNotes">
+        <div id="~_Div2">
+
+                </div>
+    </div>
+</div>-->
+            <div id="~_Tabs" class="s-DialogContent" style="overflow:auto;height:350px">
+                <ul>
+                    <li><a href="#~_TabSalesOrders"><span>Sales orders</span></a></li>
+                     <li><a href="#~_TabPayment"><span>Payment</span></a></li>
+
+                    <li><a href="#~_TabPick"><span>Pick</span></a></li>
+                    <li><a href="#~_TabInvoice"><span>Invoice</span></a></li>
+
+                    <li><a href="#~_TabReturn"><span>Return</span></a>
+
+                    </li>
+                    <li><a href="#~_TabRestock"><span>Restock</span></a></li>
+
+                </ul>
+
+                <div id="~_TabSalesOrders" class="tab-pane s-TabNotes">
+                    
+                        <div id="~_SalesOrdersGrid">
+                        </div>
+                    
+                </div>
+                 <div id="~_TabPayment" class="tab-pane">
+                            <div id="~_PaymentGrid">
+                            </div>
+                        </div>
+                <div id="~_TabPick" class="tab-pane s-TabOrders">
+                    <div id="~_PickGrid">
+                    </div>
+                </div>
+     
+
+                 
+                        <div id="~_TabInvoice" class="tab-pane">
+                            <div id="~_InvoiceGrid">
+                            </div>
+                        </div>
+                       
+                
+             
+                <div id="~_TabReturn" class="tab-pane s-TabOrders">
+                    <div id="~_ReturnGrid">
+                    </div>
+                </div>
+                <div id="~_TabRestock" class="tab-pane s-TabOrders">
+                    <div id="~_RestockGrid">
+                    </div>
+                </div>
+            </div>
+
+

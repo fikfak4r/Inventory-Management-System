@@ -1,0 +1,15 @@
+﻿
+@{
+    @*ViewData["Title"] = Serenity.LocalText.Get("Db.BusinessObjects.Stock.EntityPlural");*@
+    ViewData["Title"] = "Stock";
+}
+
+<div id="GridDiv"></div>
+
+<script type="text/javascript">
+    jQuery(function () {
+        new InventoryManagement.BusinessObjects.StockGrid($('#GridDiv'), {}).init();
+
+        Q.initFullHeightGridPage($('#GridDiv'));
+    });
+</script>

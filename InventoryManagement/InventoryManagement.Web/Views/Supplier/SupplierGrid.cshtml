@@ -1,0 +1,51 @@
+﻿@model Int32?
+
+
+
+
+
+<script type="text/x-kendo-template" id="status-template">
+
+</script>
+
+<div class="row">
+    <div class="col-md-9">
+        <div class="box box-danger">
+            <div class="box-header with-border">
+                @*<h3 class="box-title">Suppliers</h3>*@
+                &nbsp;
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+
+                <div style="margin:0;margin-bottom:8px" id="add-btn">
+                    <a class="btn bg-maroon btn-flat" href="Supplier/NewSupplier">
+                        <span class="fa fa-plus"></span> &nbsp; New Supplier
+                    </a>
+                </div>
+
+                <div class="table-responsive">
+                    <div id="pager"></div>
+                    <div id="supplier-list"></div>
+                    <div id="pager2"></div>
+                </div>
+                <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+
+            </div>
+            <!-- /.box-footer -->
+        </div>
+    </div>
+
+
+</div>

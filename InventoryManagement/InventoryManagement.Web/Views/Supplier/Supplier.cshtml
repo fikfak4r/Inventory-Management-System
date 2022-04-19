@@ -1,0 +1,37 @@
+﻿
+
+@section ContentHeader{
+    <h1>
+        Suppliers
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            <a href="#"><i class="fa fa-dashboard"></i> Home</a>
+        </li>
+
+    </ol>
+}
+
+
+<div id="GridDiv"></div>
+
+<script type="text/javascript">
+    jQuery(function () {
+        new InventoryManagement.BusinessObjects.SupplierGrid($('#GridDiv'), {}).init();
+
+        Q.initFullHeightGridPage($('#GridDiv'));
+    });
+</script>
+
+<script>
+    $(function () {
+        var x = new InventoryManagement.BusinessObjects.SupplierListLoader();
+        x.Load()
+    })
+</script>
+
+
+
+@Html.Partial("~/Views/Supplier/SupplierGrid.cshtml")
+
+

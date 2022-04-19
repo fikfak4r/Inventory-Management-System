@@ -1,0 +1,42 @@
+﻿
+@*@{
+    ViewData["Title"] = Serenity.LocalText.Get("Db.Administration.Account.EntityPlural");
+}*@
+
+@*<div id="GridDiv"></div>
+
+<script type="text/javascript">
+    jQuery(function () {
+        new InventoryManagement.Administration.AccountGrid($('#GridDiv'), {}).init();
+
+        Q.initFullHeightGridPage($('#GridDiv'));
+    });
+</script>*@
+
+@model int?
+
+@{
+    ViewData["Title"] = "Account";
+}
+
+@section ContentHeader {
+    <h1>@ViewData["Title"]<small></small></h1>
+}
+
+
+
+<div id="DialogDiv"></div>
+
+<script type="text/javascript">
+    var myDialogAsPanel;
+    jQuery(function () {
+        // first create a new dialog
+        myDialogAsPanel = new InventoryManagement.Administration.AccountDialog();
+        // load a new entity if url doesn't contain an ID, or load order with ID specified in page URL
+        // here we use done event in second parameter, to be sure operation succeeded before showing the panel
+        myDialogAsPanel.load(@Html.Raw(Model.ToJson()) || {}, () => {
+            // if we didn't reach here, probably there is no order with specified ID in url
+            myDialogAsPanel.element.appendTo('#DialogDiv');
+    });
+    });
+</script>
